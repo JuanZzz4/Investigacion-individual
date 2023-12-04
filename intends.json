@@ -1,0 +1,29 @@
+{
+    "intents": [
+      {
+        "tag": "Saludo",
+        "patterns": ["Hola chat", "¿Cómo estás?", "¡Hola!"],
+        "responses": ["Hola, ¿en qué puedo ayudarte hoy?"]
+      },
+      {
+        "tag": "ConsejosStress",
+        "patterns": ["Necesito consejos para manejar el estrés", "Dame consejos para reducir el estrés", "¿Cómo lidiar con el estrés?"],
+        "responses": ["Aquí tienes algunos consejos para manejar el estrés: [Consejo 1, Consejo 2, Consejo 3]"]
+      },
+      {
+        "tag": "EjerciciosRelajacion",
+        "patterns": ["¿Puedes sugerirme ejercicios de relajación?", "Necesito técnicas de meditación", "Ejercicios para calmarme"],
+        "responses": ["Claro, prueba estos ejercicios de relajación: [Ejercicio 1, Ejercicio 2, Ejercicio 3]"]
+      },
+      {
+        "tag": "ActividadesReduccionStress",
+        "patterns": ["¿Qué actividades ayudan a reducir el estrés?", "Necesito actividades relajantes", "Sugerencias para reducir el estrés"],
+        "responses": ["Aquí tienes algunas actividades que pueden ayudarte a reducir el estrés: [Actividad 1, Actividad 2, Actividad 3]"]
+      },
+      {
+        "tag": "Agradecimiento",
+        "patterns": ["Gracias por la ayuda", "Te agradezco", "¡Excelente consejo!"],
+        "responses": ["De nada, estoy aquí para ayudar. Si tienes más preguntas, no dudes en preguntar."]
+      }
+    ]
+  }
