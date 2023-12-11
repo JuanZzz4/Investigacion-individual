@@ -24,6 +24,31 @@
         "tag": "Agradecimiento",
         "patterns": ["Gracias por la ayuda", "Te agradezco", "¡Excelente consejo!"],
         "responses": ["De nada, estoy aquí para ayudar. Si tienes más preguntas, no dudes en preguntar."]
-      }
+      },
+      {
+      "tag": "RespiracionProfunda",
+      "patterns": ["Ejercicios de respiración", "Respiración profunda", "Técnicas de respiración"],
+      "responses": ["Prueba la respiración profunda para aliviar el estrés. Inhala profundamente y exhala lentamente varias veces."]
+     },
+     {
+      "tag": "Mindfulness",
+      "patterns": ["Prácticas de mindfulness", "Mindfulness para el estrés", "Atención plena"],
+      "responses": ["El mindfulness puede ser efectivo. Intenta enfocarte en el momento presente para reducir el estrés."]
+    },
+    {
+      "tag": "ActividadFisica",
+      "patterns": ["Ejercicio físico para el estrés", "Deporte para reducir el estrés", "Actividades físicas relajantes"],
+      "responses": ["La actividad física regular, como caminar o hacer ejercicio, puede ayudar a liberar tensiones y reducir el estrés."]
+    },
+    {
+      "tag": "Descanso",
+      "patterns": ["Importancia del descanso", "Cómo mejorar el sueño", "Consejos para dormir mejor"],
+      "responses": ["Un buen descanso es fundamental para combatir el estrés. Asegúrate de dormir lo suficiente y mantener un horario regular."]
+    },
+    {
+      "tag": "ApoyoSocial",
+      "patterns": ["Buscar apoyo social", "Hablar con amigos", "Red de apoyo emocional"],
+      "responses": ["No dudes en compartir tus sentimientos con amigos o seres queridos. El apoyo social puede ser clave para manejar el estrés."]
+    }
     ]
   }
