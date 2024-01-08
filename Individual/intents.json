@@ -1,0 +1,34 @@
+  {"intents":[
+    {
+        "tag": "saludo",
+        "patterns": ["Hola", "Hola, ¿cómo estás?", "Saludos", "¡Buen día!"],
+        "responses": ["¡Hola! ¿En que puedo ayudarte hoy?", "¡Hola! Estoy aquí para responder tus preguntas.", "¡Saludos! ¿Cómo puedo asistirte?"]
+    },
+    {
+        "tag": "controlar estres",
+        "patterns": ["Cómo controlar el estrés", "Consejos para reducir el estrés", "Manejo del estrés", "¿Qué hacer cuando estoy estresado?"],
+        "responses": ["Practica la respiración profunda", "Realiza actividades relajantes como yoga o meditación", "Habla con alguien de confianza sobre tus preocupaciones", "Establece límites y prioridades en tus tareas diarias"]
+    },
+    {
+        "tag": "despedida",
+        "patterns": ["Adiós", "Hasta luego", "Nos vemos", "Chau"],
+        "responses": ["¡Hasta luego!", "Si tienes más preguntas, estaré aquí. ¡Adiós!", "Que tengas un buen día."]
+    },
+    {
+        "tag": "conversacion_general",
+        "patterns": ["Cuéntame más sobre ti", "Háblame de ti", "¿Cómo estás?", "¿Qué haces?" , "Quien eres"],
+        "responses": ["Soy un bot diseñado para ayudarte con temas financieros y de bienestar.", "Estoy aquí para responder tus preguntas sobre finanzas y salud.", "¿En qué área específica necesitas ayuda?"]
+    },
+    {
+        "tag": "agradecimiento",
+        "patterns": ["Gracias", "Gracias por la ayuda", "Te agradezco", "Mil gracias"],
+        "responses": ["¡De nada!", "Estoy aquí para ayudar.", "Siempre es un placer ayudarte."]
+    },
+    {
+        "tag": "motivacion",
+        "patterns": ["Necesito motivación", "Estoy desmotivado", "Motívame", "Dame ánimos"],
+        "responses": ["¡Tú puedes hacerlo!", "Recuerda que cada paso cuenta hacia tus metas.", "La perseverancia es clave para superar los desafíos."]
+    }
+    
+ ]
+}
