@@ -1,34 +1,250 @@
-  {"intents":[
-    {
-        "tag": "saludo",
-        "patterns": ["Hola", "Hola, ¿cómo estás?", "Saludos", "¡Buen día!"],
-        "responses": ["¡Hola! ¿En que puedo ayudarte hoy?", "¡Hola! Estoy aquí para responder tus preguntas.", "¡Saludos! ¿Cómo puedo asistirte?"]
-    },
-    {
-        "tag": "controlar estres",
-        "patterns": ["Cómo controlar el estrés", "Consejos para reducir el estrés", "Manejo del estrés", "¿Qué hacer cuando estoy estresado?"],
-        "responses": ["Practica la respiración profunda", "Realiza actividades relajantes como yoga o meditación", "Habla con alguien de confianza sobre tus preocupaciones", "Establece límites y prioridades en tus tareas diarias"]
-    },
-    {
-        "tag": "despedida",
-        "patterns": ["Adiós", "Hasta luego", "Nos vemos", "Chau"],
-        "responses": ["¡Hasta luego!", "Si tienes más preguntas, estaré aquí. ¡Adiós!", "Que tengas un buen día."]
-    },
-    {
-        "tag": "conversacion_general",
-        "patterns": ["Cuéntame más sobre ti", "Háblame de ti", "¿Cómo estás?", "¿Qué haces?" , "Quien eres"],
-        "responses": ["Soy un bot diseñado para ayudarte con temas financieros y de bienestar.", "Estoy aquí para responder tus preguntas sobre finanzas y salud.", "¿En qué área específica necesitas ayuda?"]
-    },
-    {
-        "tag": "agradecimiento",
-        "patterns": ["Gracias", "Gracias por la ayuda", "Te agradezco", "Mil gracias"],
-        "responses": ["¡De nada!", "Estoy aquí para ayudar.", "Siempre es un placer ayudarte."]
-    },
-    {
-        "tag": "motivacion",
-        "patterns": ["Necesito motivación", "Estoy desmotivado", "Motívame", "Dame ánimos"],
-        "responses": ["¡Tú puedes hacerlo!", "Recuerda que cada paso cuenta hacia tus metas.", "La perseverancia es clave para superar los desafíos."]
-    }
-    
- ]
+{
+    "intents":[
+        {
+            "tag": "saludo",
+            "patterns": ["Hola", "Hola, ¿como estas?", "Saludos", "¡Buen dia!"],
+            "responses": ["¡Hola! ¿En que puedo ayudarte hoy?", "¡Hola! Estoy aqui para responder tus preguntas.", "¡Saludos! ¿Como puedo asistirte?"]
+        },
+        {
+            "tag": "controlar_estres",
+            "patterns": ["Como controlar el estres", "Consejos para reducir el estres", "Manejo del estres", "¿Que hacer cuando estoy estresado?"],
+            "responses": ["Practica la respiracion profunda", "Realiza actividades relajantes como yoga o meditacion", "Habla con alguien de confianza sobre tus preocupaciones", "Establece limites y prioridades en tus tareas diarias"]
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["Adios", "Hasta luego", "Nos vemos", "Chau"],
+            "responses": ["¡Hasta luego!", "Si tienes mas preguntas, estare aqui. ¡Adios!", "Que tengas un buen dia."]
+        },
+        {
+            "tag": "conversacion_general",
+            "patterns": ["Cuentame mas sobre ti", "Hablame de ti", "¿Como estas?", "¿Que haces?" , "Quien eres"],
+            "responses": ["Soy un bot disenado para ayudarte con temas financieros y de bienestar.", "Estoy aqui para responder tus preguntas sobre finanzas y salud.", "¿En que area especifica necesitas ayuda?"]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": ["gracias", "te agradezco"],
+            "responses": ["¡De nada!", "Estoy aquí para ayudar.", "Siempre es un placer ayudarte."]
+        },
+        {
+            "tag": "motivacion",
+            "patterns": ["Necesito motivacion", "Estoy desmotivado", "Motivame", "Dame animos"],
+            "responses": ["¡Tu puedes hacerlo!", "Recuerda que cada paso cuenta hacia tus metas.", "La perseverancia es clave para superar los desafios."]
+        },
+        {
+            "tag": "manejo_estres_general",
+            "patterns": ["Cómo manejar el estrés", "Técnicas para aliviar el estrés", "Reducir el estrés diario"],
+            "responses": ["Practica la respiración profunda", "Realiza actividades relajantes como yoga o meditación", "Establece rutinas saludables para el día a día."]
+        },
+        {
+            "tag": "estres_en_el_trabajo",
+            "patterns": ["Cómo manejar el estrés en el trabajo", "Estoy estresado por el trabajo", "Consejos laborales para reducir el estrés"],
+            "responses": ["Prioriza tus tareas", "Toma descansos cortos durante el día", "Habla con tu supervisor sobre tus preocupaciones."]
+        },
+        {
+            "tag": "estres_academico",
+            "patterns": ["Cómo lidiar con el estrés académico", "Estoy estresado por los estudios", "Consejos para reducir el estrés escolar"],
+            "responses": ["Organiza tu tiempo de estudio", "No dudes en pedir ayuda si la necesitas", "Encuentra técnicas de estudio que funcionen para ti."]
+        },
+        {
+            "tag": "preguntas_frecuentes",
+            "patterns": ["Cómo funciona", "Qué puedes hacer", "Ayuda con", "Cómo usar este chatbot"],
+            "responses": ["Soy un bot diseñado para ayudarte con temas financieros y de bienestar.", "Puedo proporcionar consejos sobre manejo del estrés, finanzas y más.", "Simplemente pregúntame lo que necesitas."]
+        },
+        {
+            "tag": "estres_relaciones_personales",
+            "patterns": ["Cómo manejar el estrés en las relaciones", "Estoy estresado por problemas familiares", "Consejos para relaciones saludables"],
+            "responses": ["Comunica tus sentimientos abierta y honestamente", "Busca apoyo en amigos o familiares de confianza", "Considera la posibilidad de hablar con un profesional."]
+        },
+        {
+            "tag": "estres_salud_mental",
+            "patterns": ["Cómo cuidar la salud mental", "Estoy sintiendo mucha presión mental", "Consejos para la salud mental"],
+            "responses": ["Prioriza tu bienestar emocional", "Haz actividades que te traigan alegría", "No dudes en buscar ayuda profesional si la necesitas."]
+        },
+        {
+            "tag": "estres_financiero",
+            "patterns": ["Cómo manejar el estrés financiero", "Estoy preocupado por mis finanzas", "Consejos para estabilidad financiera"],
+            "responses": ["Haz un presupuesto claro", "Ahorra tanto como sea posible", "Considera hablar con un asesor financiero."]
+        },
+        {
+            "tag": "preguntas_sobre_bot",
+            "patterns": ["Cómo te llamas", "Quién eres", "Cómo fue creado", "Cuál es tu propósito"],
+            "responses": ["Soy un asistente virtual creado para ayudar con temas financieros y de bienestar.", "Puedes llamarme [nombre que elijas].", "Mi propósito es proporcionar información útil y apoyo."]
+        },
+        {
+            "tag": "estres_ejercicio",
+            "patterns": ["Cómo el ejercicio reduce el estrés", "Estoy estresado y quiero hacer ejercicio", "Consejos para incorporar el ejercicio en mi rutina diaria"],
+            "responses": ["El ejercicio regular puede ayudar a liberar tensiones y reducir el estrés.", "Considera actividades como caminar, correr o practicar deportes.", "Consulta con un profesional de la salud antes de comenzar una nueva rutina de ejercicios."]
+        },
+        {
+            "tag": "estres_tiempo_libre",
+            "patterns": ["Cómo relajarse en el tiempo libre", "Estoy estresado durante mi tiempo libre", "Consejos para disfrutar del tiempo libre"],
+            "responses": ["Encuentra actividades que te apasionen y te relajen.", "Planifica tiempo para el descanso y la recreación.", "Conecta con tus pasatiempos favoritos para aliviar el estrés."]
+        },
+        {
+            "tag": "estres_productividad",
+            "patterns": ["Cómo manejar el estrés y ser más productivo", "Estoy abrumado con tareas", "Consejos para mejorar la productividad"],
+            "responses": ["Prioriza tus tareas según su importancia.", "Usa técnicas de gestión del tiempo como la técnica Pomodoro.", "Aprende a decir no y establecer límites para evitar el agotamiento."]
+        },
+        {
+            "tag": "preguntas_personales_bot",
+            "patterns": ["Cuál es tu color favorito", "Te gusta algo en particular", "Eres un humano"],
+            "responses": ["No tengo preferencias de color, ¡pero estoy aquí para ayudarte!", "No tengo preferencias personales, mi objetivo es asistirte.", "Soy un programa de inteligencia artificial, no soy un humano."]
+        },
+        {
+            "tag": "estres_relaciones_personales",
+            "patterns": ["Cómo manejar el estrés en las relaciones", "Estoy estresado por problemas familiares", "Consejos para relaciones saludables"],
+            "responses": ["Comunica tus sentimientos abierta y honestamente", "Busca apoyo en amigos o familiares de confianza", "Considera la posibilidad de hablar con un profesional."]
+        },
+        {
+            "tag": "estres_salud_mental",
+            "patterns": ["Cómo cuidar la salud mental", "Estoy sintiendo mucha presión mental", "Consejos para la salud mental"],
+            "responses": ["Prioriza tu bienestar emocional", "Haz actividades que te traigan alegría", "No dudes en buscar ayuda profesional si la necesitas."]
+        },
+        {
+            "tag": "estres_financiero",
+            "patterns": ["Cómo manejar el estrés financiero", "Estoy preocupado por mis finanzas", "Consejos para estabilidad financiera"],
+            "responses": ["Haz un presupuesto claro", "Ahorra tanto como sea posible", "Considera hablar con un asesor financiero."]
+        },
+        {
+            "tag": "preguntas_sobre_bot",
+            "patterns": ["Cómo te llamas", "Quién eres", "Cómo fue creado", "Cuál es tu propósito"],
+            "responses": ["Soy un asistente virtual creado para ayudar con temas financieros y de bienestar.", "Puedes llamarme [nombre que elijas].", "Mi propósito es proporcionar información útil y apoyo."]
+        },
+        {
+            "tag": "estres_ejercicio",
+            "patterns": ["Cómo el ejercicio reduce el estrés", "Estoy estresado y quiero hacer ejercicio", "Consejos para incorporar el ejercicio en mi rutina diaria"],
+            "responses": ["El ejercicio regular puede ayudar a liberar tensiones y reducir el estrés.", "Considera actividades como caminar, correr o practicar deportes.", "Consulta con un profesional de la salud antes de comenzar una nueva rutina de ejercicios."]
+        },
+        {
+            "tag": "estres_tiempo_libre",
+            "patterns": ["Cómo relajarse en el tiempo libre", "Estoy estresado durante mi tiempo libre", "Consejos para disfrutar del tiempo libre"],
+            "responses": ["Encuentra actividades que te apasionen y te relajen.", "Planifica tiempo para el descanso y la recreación.", "Conecta con tus pasatiempos favoritos para aliviar el estrés."]
+        },
+        {
+            "tag": "estres_productividad",
+            "patterns": ["Cómo manejar el estrés y ser más productivo", "Estoy abrumado con tareas", "Consejos para mejorar la productividad"],
+            "responses": ["Prioriza tus tareas según su importancia.", "Usa técnicas de gestión del tiempo como la técnica Pomodoro.", "Aprende a decir no y establecer límites para evitar el agotamiento."]
+        },
+        {
+            "tag": "preguntas_personales_bot",
+            "patterns": ["Cuál es tu color favorito", "Te gusta algo en particular", "Eres un humano"],
+            "responses": ["No tengo preferencias de color, ¡pero estoy aquí para ayudarte!", "No tengo preferencias personales, mi objetivo es asistirte.", "Soy un programa de inteligencia artificial, no soy un humano."]
+        },
+        {
+            "tag": "estres_social",
+            "patterns": ["Cómo manejar el estrés social", "Estoy nervioso en situaciones sociales", "Consejos para superar la ansiedad social"],
+            "responses": ["Practica la autoaceptación", "Desarrolla habilidades sociales gradualmente", "Recuerda que todos tienen sus propias inseguridades."]
+        },
+        {
+            "tag": "estres_tecnologia",
+            "patterns": ["Cómo reducir el estrés relacionado con la tecnología", "Estoy abrumado por la información digital", "Consejos para un uso saludable de la tecnología"],
+            "responses": ["Establece límites de tiempo para el uso de dispositivos", "Practica la desconexión digital regularmente", "Prioriza la calidad sobre la cantidad de la información que consumes."]
+        },
+        {
+            "tag": "estres_viajes",
+            "patterns": ["Cómo manejar el estrés durante los viajes", "Estoy estresado por los preparativos de viaje", "Consejos para viajar de manera relajada"],
+            "responses": ["Planifica con anticipación", "Mantén una actitud flexible", "Disfruta del momento y no te preocupes demasiado por los detalles."]
+        },
+        {
+            "tag": "estres_cambio",
+            "patterns": ["Cómo adaptarse al cambio sin estresarse", "Estoy ansioso por los cambios en mi vida", "Consejos para afrontar cambios positivos"],
+            "responses": ["Enfrenta los cambios con una mentalidad positiva", "Encuentra oportunidades de crecimiento en cada cambio", "Busca apoyo en amigos y familiares durante períodos de cambio."]
+        },
+        {
+            "tag": "preguntas_filosoficas",
+            "patterns": ["Cuál es el significado de la vida", "Existe el destino", "Cuál es el propósito de todo esto"],
+            "responses": ["Las preguntas filosóficas son fascinantes, pero no tengo respuestas definitivas.", "Cada persona puede encontrar su propio significado y propósito en la vida.", "La exploración filosófica puede ser una forma enriquecedora de reflexionar sobre nuestra existencia."]
+        },
+        {
+            "tag": "estres_creatividad",
+            "patterns": ["Cómo manejar el estrés creativo", "Estoy bloqueado creativamente y estresado", "Consejos para estimular la creatividad"],
+            "responses": ["Practica la relajación antes de abordar tareas creativas", "Explora nuevas experiencias y perspectivas", "No temas cometer errores, son parte del proceso creativo."]
+        },
+        {
+            "tag": "preguntas_existenciales",
+            "patterns": ["Qué pasa después de la muerte", "Existe vida extraterrestre", "Cómo surgió el universo"],
+            "responses": ["Las preguntas existenciales son complejas y a menudo no tienen respuestas definitivas.", "La ciencia y la filosofía han explorado estas cuestiones a lo largo de la historia.", "Cada persona puede tener sus propias creencias sobre estos temas."]
+        },
+        {
+            "tag": "salud_mental",
+            "patterns": ["Cómo cuidar la salud mental", "Estoy sintiendo ansiedad", "Consejos para mantener la salud mental"],
+            "responses": ["Prioriza el autocuidado emocional", "Busca apoyo en amigos y familiares", "Considera hablar con un profesional de la salud mental."]
+        },
+        {
+            "tag": "estres_trabajo",
+            "patterns": ["Cómo manejar el estrés en el trabajo", "Estoy abrumado por las responsabilidades laborales", "Consejos para un equilibrio trabajo-vida saludable"],
+            "responses": ["Organiza tu tiempo de manera eficiente", "Aprende a delegar tareas cuando sea necesario", "Establece límites claros entre el trabajo y la vida personal."]
+        },
+        {
+            "tag": "mindfulness",
+            "patterns": ["Qué es el mindfulness", "Cómo practicar la atención plena", "Beneficios del mindfulness"],
+            "responses": ["El mindfulness es la práctica de estar presente en el momento actual", "Prueba la meditación y la respiración consciente", "El mindfulness puede reducir el estrés y mejorar el bienestar emocional."]
+        },
+        {
+            "tag": "hobbies_relajantes",
+            "patterns": ["Ideas de hobbies relajantes", "Necesito un pasatiempo tranquilo", "Cómo relajarse en el tiempo libre"],
+            "responses": ["Prueba la jardinería o la pintura", "Lee libros que te interesen", "La música suave o los paseos al aire libre pueden ser relajantes."]
+        },
+        {
+            "tag": "alimentacion_saludable",
+            "patterns": ["Cómo llevar una alimentación saludable", "Estoy buscando consejos para comer mejor", "Ideas para una dieta equilibrada"],
+            "responses": ["Incluye variedad de frutas y verduras en tu dieta", "Bebe suficiente agua a lo largo del día", "Consulta a un nutricionista para obtener asesoramiento personalizado."]
+        },
+        {
+            "tag": "ejercicio_casa",
+            "patterns": ["Ejercicios para hacer en casa", "Quiero mantenerme activo en casa", "Cómo crear una rutina de ejercicios en casa"],
+            "responses": ["Prueba ejercicios de fuerza y ​​cardio en casa", "El yoga y la rutina de cuerpo completo son buenas opciones", "Adapta tu rutina según tu nivel de condición física."]
+        },
+        {
+            "tag": "cambio_climatico",
+            "patterns": ["Cómo contribuir a combatir el cambio climático", "Estoy preocupado por el medio ambiente", "Acciones individuales para reducir la huella de carbono"],
+            "responses": ["Reduce, reutiliza y recicla", "Opta por medios de transporte sostenibles", "Apoya a empresas y prácticas amigables con el medio ambiente."]
+        },
+        {
+            "tag": "controlar_estres_personas",
+            "patterns": ["Cómo ayudar a controlar el estrés", "Consejos para reducir el estrés en las personas", "Cómo apoyar a alguien estresado"],
+            "responses": ["Escucha activamente a la persona estresada", "Ofrece tu apoyo emocional", "Anima a practicar técnicas de relajación, como la meditación."]
+        },
+        {
+            "tag": "estres_actividades",
+            "patterns": ["Actividades para reducir el estrés", "Quiero aprender nuevas formas de relajarme", "Cómo encontrar actividades calmantes"],
+            "responses": ["Practica la respiración profunda y consciente", "Experimenta con la meditación guiada", "Realiza actividades como caminar, dibujar o leer para desconectar."]
+        },
+        {
+            "tag": "estres_tiempo_libre",
+            "patterns": ["Cómo disfrutar del tiempo libre sin estrés", "Estoy buscando formas de relajarme en mi tiempo libre", "Consejos para un ocio tranquilo"],
+            "responses": ["Encuentra un hobby que te apasione", "Planifica tiempo para descansar y rejuvenecer", "Desconéctate de las responsabilidades durante momentos específicos del día."]
+        },
+        {
+            "tag": "estres_relaciones_personales",
+            "patterns": ["Cómo manejar el estrés en las relaciones", "Estoy estresado por problemas familiares", "Consejos para relaciones saludables"],
+            "responses": ["Comunica tus sentimientos abierta y honestamente", "Busca apoyo en amigos o familiares de confianza", "Considera la posibilidad de hablar con un profesional."]
+        },
+        {
+            "tag": "estres_sueno",
+            "patterns": ["Cómo mejorar el sueño para reducir el estrés", "Estoy teniendo problemas para dormir", "Consejos para un mejor descanso"],
+            "responses": ["Establece una rutina de sueño regular", "Crea un ambiente propicio para dormir", "Evita la estimulación electrónica antes de acostarte."]
+        },
+        {
+            "tag": "estres_humor",
+            "patterns": ["Cómo el humor puede reducir el estrés", "Quiero aprender a encontrar humor en situaciones difíciles", "Consejos para mantener un sentido del humor"],
+            "responses": ["Encuentra momentos para reír cada día", "Practica la risoterapia", "No subestimes el poder curativo del humor."]
+        },
+        {
+            "tag": "estres_naturaleza",
+            "patterns": ["Cómo conectarse con la naturaleza para aliviar el estrés", "Estoy buscando formas de relajarme al aire libre", "Beneficios de pasar tiempo en la naturaleza"],
+            "responses": ["Realiza paseos al aire libre", "Disfruta de la tranquilidad de un parque", "Practica la jardinería como actividad relajante."]
+        },
+        {
+            "tag": "estres_mindfulness",
+            "patterns": ["Cómo practicar el mindfulness para reducir el estrés", "Quiero aprender técnicas de atención plena", "Beneficios del mindfulness en la reducción del estrés"],
+            "responses": ["Incorpora la meditación mindfulness en tu rutina diaria", "Concéntrate en el presente sin juzgar", "Participa en actividades conscientes, como comer o caminar."]
+        },
+        {
+            "tag": "estres_musica",
+            "patterns": ["Cómo la música puede ayudar a reducir el estrés", "Estoy buscando playlists relajantes", "Beneficios de escuchar música tranquila"],
+            "responses": ["Explora géneros musicales calmantes", "Crea playlists para diferentes estados de ánimo", "Haz de la música parte de tu ritual de relajación."]
+        } 
+
+    ]
 }
