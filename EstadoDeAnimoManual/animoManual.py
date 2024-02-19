@@ -13,31 +13,41 @@ engine.setProperty('rate', 150)
 consejos_feliz = [
     "¡Te sientes feliz! Sigue así.",
     "La alegría es contagiosa. Disfruta tu día.",
-    "Hoy es un buen día para sonreír."
+    "Hoy es un buen día para sonreír.",
+    "Aprovecha este estado de ánimo para hacer algo que te apasiona.",
+    "Felicidades, ¡te lo mereces!"
 ]
 
 consejos_triste = [
     "¿Hay algo que te preocupa? Recuerda que siempre puedes hablar con alguien.",
     "Las cosas mejorarán. Ánimo.",
-    "A veces, permitirse sentir tristeza es parte del proceso de curación."
+    "A veces, permitirse sentir tristeza es parte del proceso de curación.",
+    "Date un tiempo para cuidar de ti mismo, te lo mereces.",
+    "No estás solo, habla con alguien de confianza sobre cómo te sientes."
 ]
 
 consejos_neutro = [
     "Estás en un estado neutro. ¿Hay algo en lo que pueda ayudarte?",
     "El equilibrio es clave. Si necesitas algo, estoy aquí.",
-    "A veces, estar en calma es un regalo en sí mismo."
+    "A veces, estar en calma es un regalo en sí mismo.",
+    "Tómate un tiempo para reflexionar sobre lo que te hace feliz.",
+    "Haz algo que te inspire y te haga sentir más motivado."
 ]
 
 consejos_enojado = [
     "Respira hondo. El enojo pasará.",
     "Intenta encontrar una salida positiva para liberar tu enojo.",
-    "Es normal sentir enojo, pero trata de no dejar que te controle."
+    "Es normal sentir enojo, pero trata de no dejar que te controle.",
+    "Practica ejercicios de relajación para calmar tu mente y cuerpo.",
+    "Habla con alguien de confianza sobre lo que te está molestando."
 ]
 
 consejos_estresado = [
     "Tómate un descanso y relájate.",
     "Prioriza tus tareas y haz una cosa a la vez.",
-    "La meditación o ejercicios de respiración pueden ayudar a reducir el estrés."
+    "La meditación o ejercicios de respiración pueden ayudar a reducir el estrés.",
+    "Haz una lista de las cosas que te preocupan y trata de abordarlas una por una.",
+    "Habla con alguien sobre cómo te sientes, a menudo ayuda a aliviar el estrés."
 ]
 consejos_confianza = [
     "Confía en tus habilidades, has llegado lejos.",
@@ -57,32 +67,33 @@ consejos_culpa = [
     "Haz cosas positivas para compensar tus acciones, cuando sea posible.",
 ]
 def show_advice(mood):
-    # Seleccionar un consejo aleatorio para el estado de ánimo
+    # Seleccionar dos consejos aleatorios para el estado de ánimo
     if mood == "feliz":
-        advice = random.choice(consejos_feliz)
+        advice = random.sample(consejos_feliz, 2)
     elif mood == "triste":
-        advice = random.choice(consejos_triste)
+        advice = random.sample(consejos_triste, 2)
     elif mood == "neutro":
-        advice = random.choice(consejos_neutro)
+        advice = random.sample(consejos_neutro, 2)
     elif mood == "enojado":
-        advice = random.choice(consejos_enojado)
+        advice = random.sample(consejos_enojado, 2)
     elif mood == "estresado":
-        advice = random.choice(consejos_estresado)
+        advice = random.sample(consejos_estresado, 2)
     elif mood == "confianza":
-        advice = random.choice(consejos_confianza)
+        advice = random.sample(consejos_confianza, 2)
     elif mood == "gratitud":
-        advice = random.choice(consejos_gratitud)
+        advice = random.sample(consejos_gratitud, 2)
     elif mood == "culpa":
-        advice = random.choice(consejos_culpa)
+        advice = random.sample(consejos_culpa, 2)
     else:
         advice = "No reconozco ese estado de ánimo."
 
-    # Pronunciar el consejo a través de la asistente virtual
-    engine.say(advice)
+    # Pronunciar los consejos a través de la asistente virtual
+    for adv in advice:
+        engine.say(adv)
     engine.runAndWait()
 
     # Mostrar mensaje en la interfaz
-    messagebox.showinfo("Consejo", advice)
+    messagebox.showinfo("Consejos", '\n'.join(advice))
 
 # Función para preguntar si se quiere ingresar otro estado de ánimo
 def ask_to_retry():
